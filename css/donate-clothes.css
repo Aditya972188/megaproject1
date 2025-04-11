@@ -1,0 +1,270 @@
+/* Clothes Donation Page Specific Styles */
+
+/* Hero Section */
+.donation-hero.clothes-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('../images/cloths-donation.jpg') center/cover no-repeat;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.donation-hero.clothes-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.donation-hero.clothes-hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Clothes Info Section */
+.clothes-info {
+    padding: 4rem 0;
+    background-color: #f9f9f9;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.info-card {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.info-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.info-card i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.info-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--dark-color);
+}
+
+.info-card p {
+    margin-bottom: 1.5rem;
+    color: #666;
+}
+
+/* Accepted Items Section */
+.accepted-items {
+    padding: 4rem 0;
+    background-color: white;
+}
+
+.items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.item-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.item-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.item-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.item-card h3 {
+    padding: 1rem 1rem 0.5rem;
+    color: var(--dark-color);
+}
+
+.item-card p {
+    padding: 0 1rem 1.5rem;
+    color: #666;
+}
+
+.preparation-guide {
+    margin-top: 3rem;
+    padding: 2rem;
+    background: #f5f5f5;
+    border-radius: 8px;
+}
+
+.preparation-guide h3 {
+    color: var(--dark-color);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.preparation-guide ul {
+    list-style: none;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.preparation-guide li {
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+}
+
+.preparation-guide i {
+    color: var(--primary-color);
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+
+/* Drop-off Locations Section */
+.dropoff-locations {
+    padding: 4rem 0;
+    background-color: #f9f9f9;
+}
+
+.locations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.location-card {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.location-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.location-card h3 {
+    color: var(--dark-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.location-card p {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.location-card i {
+    margin-right: 0.8rem;
+    color: var(--primary-color);
+    width: 20px;
+    text-align: center;
+}
+
+/* Bulk Donations Section */
+.bulk-donations {
+    padding: 4rem 0;
+    background-color: white;
+}
+
+.bulk-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.bulk-info h3 {
+    color: var(--dark-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.bulk-info p {
+    margin-bottom: 1.5rem;
+    color: #666;
+}
+
+.bulk-info ul {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.bulk-info li {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.bulk-info i {
+    color: var(--primary-color);
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+
+.bulk-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .donation-hero.clothes-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .donation-hero.clothes-hero p {
+        font-size: 1.2rem;
+    }
+    
+    .bulk-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .bulk-image {
+        order: -1;
+    }
+}
+
+@media (max-width: 480px) {
+    .donation-hero.clothes-hero {
+        height: 50vh;
+    }
+    
+    .donation-hero.clothes-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .info-grid,
+    .locations-grid {
+        grid-template-columns: 1fr;
+    }
+}

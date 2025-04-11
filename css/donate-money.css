@@ -1,0 +1,477 @@
+/* Donate Money Page Specific Styles */
+
+/* Hero Section */
+.donation-hero {
+    background: linear-gradient(rgba(76, 175, 80, 0.8), rgba(46, 125, 50, 0.8)), 
+                url('../images/money-donation.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 8rem 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.donation-hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    animation: fadeIn 1s ease;
+}
+
+.donation-hero-content p {
+    font-size: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+    animation: fadeIn 1s ease 0.3s forwards;
+    opacity: 0;
+}
+
+/* Donation Options */
+.donation-options {
+    padding: 4rem 0;
+    background-color: #f9f9f9;
+}
+
+.options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.option-card {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.option-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.option-icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.option-card h3 {
+    margin-bottom: 1rem;
+    color: var(--dark-color);
+}
+
+.option-card p {
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
+.option-btn {
+    width: 100%;
+}
+
+/* Donation Form Section */
+.donation-form-section {
+    padding: 4rem 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.form-container {
+    background: white;
+    border-radius: 8px;
+    padding: 3rem;
+    box-shadow: var(--shadow);
+    margin-bottom: 3rem;
+}
+
+.form-container h2 {
+    margin-bottom: 2rem;
+    color: var(--dark-color);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--dark-color);
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+}
+
+.amount-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.amount-option {
+    padding: 0.8rem 1.5rem;
+    background: white;
+    border: 2px solid var(--primary-color);
+    border-radius: 4px;
+    color: var(--primary-color);
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.amount-option:hover {
+    background: var(--light-color);
+}
+
+.amount-option.active {
+    background: var(--primary-color);
+    color: white;
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.payment-methods {
+    margin: 1rem 0;
+}
+
+.payment-method {
+    margin-bottom: 0.5rem;
+}
+
+.payment-method input {
+    display: none;
+}
+
+.payment-method label {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.payment-method label i {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.payment-method input:checked + label {
+    border-color: var(--primary-color);
+    background-color: var(--light-color);
+}
+
+.credit-card-form {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    background: #f9f9f9;
+    border-radius: 4px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+/* Donation Info */
+.donation-info {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: var(--shadow);
+}
+
+.donation-info h3 {
+    margin-bottom: 1.5rem;
+    color: var(--dark-color);
+}
+
+.impact-item {
+    display: flex;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.impact-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.impact-icon {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-right: 1rem;
+    flex-shrink: 0;
+}
+
+.impact-content h4 {
+    margin-bottom: 0.3rem;
+    color: var(--dark-color);
+}
+
+.security-badge {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 4px;
+}
+
+.security-badge i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-right: 1rem;
+}
+
+/* Donation Impact */
+.donation-impact {
+    padding: 4rem 0;
+    background: #f9f9f9;
+}
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.impact-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.impact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.impact-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.impact-content {
+    padding: 1.5rem;
+}
+
+.impact-content h3 {
+    margin-bottom: 0.5rem;
+    color: var(--dark-color);
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 4rem 0;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.faq-item {
+    margin-bottom: 1rem;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 1.5rem;
+    text-align: left;
+    background: white;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--dark-color);
+    transition: var(--transition);
+}
+
+.faq-question:hover {
+    background: #f9f9f9;
+}
+
+.faq-question i {
+    transition: var(--transition);
+}
+
+.faq-question.active i {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    padding: 0 1.5rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background: #f9f9f9;
+}
+
+.faq-answer p {
+    padding: 1.5rem 0;
+}
+
+.faq-answer.show {
+    max-height: 500px;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 3rem;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    position: relative;
+    animation: modalFadeIn 0.3s ease;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.close-modal {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #999;
+}
+
+.close-modal:hover {
+    color: var(--dark-color);
+}
+
+.modal-icon {
+    font-size: 4rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.modal h2 {
+    margin-bottom: 1rem;
+}
+
+.modal p {
+    margin-bottom: 1.5rem;
+}
+
+.modal-btn {
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (min-width: 992px) {
+    .donation-form-section .container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 3rem;
+        align-items: start;
+    }
+    
+    .form-container {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .donation-hero {
+        padding: 6rem 1rem;
+    }
+    
+    .donation-hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .donation-hero-content p {
+        font-size: 1.2rem;
+    }
+    
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .form-container {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .amount-options {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .donation-hero-content h1 {
+        font-size: 2rem;
+    }
+}
