@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parvarin Sanskar Foundation</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="images/logo.jpg" alt="Helping Hands Logo" style="border-radius: 50%;">
+            Parvarin Sanskar Foundation
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li class="dropdown">
+                <a href="#">Donate <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="donate-money.html">Money</a>
+                    <a href="donate-clothes.html">Clothes</a>
+                    <a href="donate-food.html">Food</a>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="signup.html" class="btn btn-outline">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-color: aquamarine;">
+        <div class="hero-content fade-in">
+            <h1>Make a Difference Today</h1>
+            <p>Your donation can change lives. Join us in our mission to help those in need.</p>
+            <div class="hero-buttons">
+                <a href="#donate" class="btn pulse">Donate Now</a>
+                <a href="signup.html" class="btn btn-outline">Join us</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="images/donations-hero.jpg" alt="People helping each other">
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stat-card">
+            <i class="fas fa-hand-holding-usd"></i>
+            <h3>$<span class="counter" data-target="1250">0</span>+</h3>
+            <p>Raised</p>
+        </div>
+        <div class="stat-card">
+            <i class="fas fa-users"></i>
+            <h3><span class="counter" data-target="250">0</span>+</h3>
+            <p>People Helped</p>
+        </div>
+        <div class="stat-card">
+            <i class="fas fa-tshirt"></i>
+            <h3><span class="counter" data-target="5000">0</span>+</h3>
+            <p>Clothes Donated</p>
+        </div>
+        <div class="stat-card">
+            <i class="fas fa-utensils"></i>
+            <h3><span class="counter" data-target="7500">0</span>+</h3>
+            <p>Meals Provided</p>
+        </div>
+    </section>
+
+    <!-- Causes Section -->
+    <section class="causes" id="donate">
+        <h2>How You Can Help</h2>
+        <p class="section-subtitle">Choose a cause that speaks to your heart</p>
+        <div class="causes-grid">
+            <div class="cause-card">
+                <img src="images/money-donation.jpg" alt="Money Donation">
+                <div class="cause-content">
+                    <h3>Financial Donations</h3>
+                    <p>Your monetary contributions help us fund critical programs and provide immediate assistance.</p>
+                    <a href="donate-money.html" class="btn">Donate Money</a>
+                </div>
+            </div>
+            <div class="cause-card">
+                <img src="images/cloths-donation.jpg" alt="Clothes Donation">
+                <div class="cause-content">
+                    <h3>Clothes Donations</h3>
+                    <p>Donate gently used clothing to help protect vulnerable individuals from harsh weather conditions.
+                    </p>
+                    <a href="donate-cloths.html" class="btn">Donate Clothes</a>
+                </div>
+            </div>
+            <div class="cause-card">
+                <img src="images/food-donation.jpg" alt="Food Donation">
+                <div class="cause-content">
+                    <h3>Food Donations</h3>
+                    <p>Help fight hunger by donating non-perishable food items or organizing a food drive.</p>
+                    <a href="donate-food.html" class="btn">Donate Food</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <h2>Stories of Hope</h2>
+        <p class="section-subtitle">Hear from those whose lives have been changed</p>
+        <div class="testimonial-slider">
+            <div class="testimonial active">
+                <div class="testimonial-content">
+                    <p>"Thanks to the generous donations, my family had food on the table during our toughest times.
+                        We're forever grateful."</p>
+                    <div class="testimonial-author">
+
+                        <div>
+                            <h4>Dr.Pankaj Verma</h4>
+                            <span>Recipient</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <p>"Donating through Helping Hands gave me confidence that my contribution would make a real
+                        difference."</p>
+                    <div class="testimonial-author">
+
+                        <div>
+                            <h4>Dr.Saurabh Singh</h4>
+                            <span>Donor</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <p>"The winter coat I received was more than just clothing—it was warmth, dignity, and hope during a
+                        cold winter."</p>
+                    <div class="testimonial-author">
+
+                        <div>
+                            <h4>Dr. Munindra k. Singh</h4>
+                            <span>Recipient</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="prev"><i class="fas fa-chevron-left"></i></button>
+                <div class="slider-dots"></div>
+                <button class="next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <h2>Stay Connected</h2>
+            <p>Subscribe to our newsletter to receive updates on our work and learn how you can help.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Parvarin Sanskar Foundation</h3>
+                <p>We are a non-profit organization dedicated to helping those in need through donations and community
+                    support.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                <a href="signup.html">Sign Up</a>
+            </div>
+            <div class="footer-section">
+                <h3>Donate</h3>
+                <a href="donate-money.html">Money</a>
+                <a href="donate-clothes.html">Clothes</a>
+                <a href="donate-food.html">Food</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Charity St, Help City</p>
+                <p><i class="fas fa-phone"></i> +91 9721884701</p>
+                <p><i class="fas fa-envelope"></i> adityajaiswalsbi20@gmail.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Parvarin Sanskar Foundation. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/common.js"></script>
+    <script src="js/home.js"></script>
+</body>
+
+</html>

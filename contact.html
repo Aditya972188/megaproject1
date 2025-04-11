@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us-Parvarin Sanskar Foundation</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="images/logo.jpg" alt="Parvarin Sanskar Foundation">
+            Parvarin Sanskar Foundation
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li class="dropdown">
+                <a href="#">Donate <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="donate-money.html">Money</a>
+                    <a href="donate-clothes.html">Clothes</a>
+                    <a href="donate-food.html">Food</a>
+                </div>
+            </li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="signup.html" class="btn btn-outline">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <div class="contact-hero-content fade-in">
+            <h1>Get In Touch</h1>
+            <p>We'd love to hear from you! Reach out with questions, feedback, or partnership opportunities.</p>
+        </div>
+    </section>
+
+    <!-- Contact Main Section -->
+    <section class="contact-main">
+        <div class="container">
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p>Feel free to reach out through any of these channels or fill out the contact form.</p>
+                
+                <div class="info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Our Location</h3>
+                        <p>Veer Bahadur Singh Purvanchal University Jaunpur</p>
+                    </div>
+                </div>
+                
+                <div class="info-card">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Phone Number</h3>
+                        <p>+91 9721884701</p>
+                        <p>Mon-Fri: 9am - 5pm</p>
+                    </div>
+                </div>
+                
+                <div class="info-card">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email Address</h3>
+                        <p>adityajaiswalsbi20@gmail.com</p>
+                        <p>parvarinsanskar@org.com</p>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                        <span class="error-message"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number (Optional)</label>
+                        <input type="tel" id="phone" name="phone">
+                        <span class="error-message"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" required>
+                            <option value="" disabled selected>Select a subject</option>
+                            <option value="donation">Donation Inquiry</option>
+                            <option value="volunteer">Volunteer Opportunity</option>
+                            <option value="partnership">Partnership</option>
+                            <option value="general">General Question</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <span class="error-message"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <span class="error-message"></span>
+                    </div>
+                    
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2>Find Our Office</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215662132035!2d-73.98784492416463!3d40.74844097138959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1689876500780!5m2!1sen!2sus" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How can I make a donation?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can make a donation through our website by visiting the "Donate" section in the navigation menu. We accept monetary donations as well as donations of clothes and food. Each donation type has its own page with specific instructions.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is my donation tax-deductible?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, Parvarin Sanskar Foundation is a registered 501(c)(3) nonprofit organization, and all monetary donations are tax-deductible to the extent allowed by law. For donations of goods, you may be able to deduct the fair market value. We provide receipts for all donations.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Where do my donations go?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Your donations directly support our programs helping individuals and families in need. Financial donations fund our food distribution programs, shelter services, and community outreach. Donated goods are distributed to those we serve or sold in our thrift stores to fund our programs.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How can I volunteer with Parvarin Sanskar Foundation?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We welcome volunteers! You can sign up through our volunteer portal on the website, or contact our volunteer coordinator at volunteer@helpinghands.org. We have opportunities ranging from one-time events to ongoing commitments in various areas of our organization.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I specify where my donation should be used?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, when making a monetary donation, you can designate it for a specific program or area of need. If you don't specify, your donation will be used where it's needed most. For goods donations, we distribute items based on current needs across our programs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Parvarin Sanskar Foundation</h3>
+                <p>We are a non-profit organization dedicated to helping those in need through donations and community support.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                <a href="signup.html">Sign Up</a>
+            </div>
+            <div class="footer-section">
+                <h3>Donate</h3>
+                <a href="donate-money.html">Money</a>
+                <a href="donate-clothes.html">Clothes</a>
+                <a href="donate-food.html">Food</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Charity St, Help City</p>
+                <p><i class="fas fa-phone"></i> +91 9721884701</p>
+                <p><i class="fas fa-envelope"></i> adityajaiswalsbi20@gmail.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Parvarin Sanskar Foundation . All rights reserved.</p>
+        </div>
+    </footer>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-app.js";
+        import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore.js";
+      
+        const firebaseConfig = {
+    apiKey: "AIzaSyCZ4ZBOmHEdH3Mzw2xJqKGFOZiBaiRsBgk",
+    authDomain: "donation-e3a5a.firebaseapp.com",
+    projectId: "donation-e3a5a",
+    storageBucket: "donation-e3a5a.firebasestorage.app",
+    messagingSenderId: "125372713766",
+    appId: "1:125372713766:web:bd2c253b8062051ecf8fe7",
+    measurementId: "G-2YTLJ4ZYGH"
+  };
+      
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+      
+        window.firebaseApp = app;
+        window.firebaseDb = db;
+        window.firebaseAddDoc = addDoc;
+        window.firebaseCollection = collection;
+      </script>
+      
+
+    <script src="js/common.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

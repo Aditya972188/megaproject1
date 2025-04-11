@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Food -Parvarin Sanskar Foundation</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/donate-food.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="images/logo.jpg" alt="Parvarin Sanskar Foundation">
+            Parvarin Sanskar Foundation
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li class="dropdown">
+                <a href="#">Donate <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="donate-money.html">Money</a>
+                    <a href="donate-clothes.html">Clothes</a>
+                    <a href="donate-food.html" class="active">Food</a>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="signup.html" class="btn btn-outline">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <!-- Donation Hero Section -->
+    <section class="donation-hero">
+        <div class="donation-hero-content">
+            <h1>Food Donations</h1>
+            <p>Your food contribution helps us fight hunger and provide nutritious meals to those in need.</p>
+        </div>
+    </section>
+
+    <!-- Donation Options -->
+    <section class="donation-options">
+        <div class="container">
+            <h2>Ways to Donate Food</h2>
+            <p class="section-subtitle">Help us nourish our community</p>
+            
+            <div class="options-grid">
+                <div class="option-card">
+                    <div class="option-icon">
+                        <i class="fas fa-shopping-basket"></i>
+                    </div>
+                    <h3>Non-Perishable Items</h3>
+                    <p>Donate canned goods, pasta, rice, and other shelf-stable food items.</p>
+                    <button class="btn option-btn" data-option="non-perishable">See Needed Items</button>
+                </div>
+                
+                <div class="option-card">
+                    <div class="option-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Fresh Produce</h3>
+                    <p>Donate fresh fruits and vegetables from your garden or local market.</p>
+                    <button class="btn option-btn" data-option="fresh">Learn More</button>
+                </div>
+                
+                <div class="option-card">
+                    <div class="option-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3>Grocery Store Partners</h3>
+                    <p>Many local stores have donation bins or can connect you with our food bank.</p>
+                    <button class="btn option-btn" data-option="grocery">Find Locations</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Food Donation Form Section -->
+    <section class="donation-form-section" id="donation-form">
+        <div class="container">
+            <div class="form-container">
+                <h2>Schedule Your Food Donation</h2>
+                <form id="foodDonationForm">
+                    <div class="form-group">
+                        <label for="donation-type">Type of Food Donation</label>
+                        <select id="donation-type" name="donation-type" required>
+                            <option value="">Select donation type</option>
+                            <option value="non-perishable">Non-perishable items</option>
+                            <option value="fresh-produce">Fresh produce</option>
+                            <option value="baked-goods">Baked goods</option>
+                            <option value="prepared-food">Prepared food (commercial kitchen)</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="quantity">Estimated Quantity</label>
+                        <select id="quantity" name="quantity" required>
+                            <option value="">Select quantity</option>
+                            <option value="small">Small (1-5 items/bags)</option>
+                            <option value="medium">Medium (6-20 items/bags)</option>
+                            <option value="large">Large (21-50 items/cases)</option>
+                            <option value="bulk">Bulk (50+ items/pallets)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="delivery-method">Delivery Method</label>
+                        <select id="delivery-method" name="delivery-method" required>
+                            <option value="">Select delivery method</option>
+                            <option value="drop-off">I will drop off</option>
+                            <option value="pickup">Schedule a pickup</option>
+                            <option value="deliver">I will deliver</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group pickup-options" id="pickupOptions" style="display: none;">
+                        <label for="pickup-date">Preferred Pickup Date</label>
+                        <input type="date" id="pickup-date" name="pickup-date">
+                        
+                        <label for="pickup-time">Preferred Pickup Time</label>
+                        <select id="pickup-time" name="pickup-time">
+                            <option value="morning">Morning (9am-12pm)</option>
+                            <option value="afternoon">Afternoon (1pm-4pm)</option>
+                            <option value="evening">Evening (5pm-7pm)</option>
+                        </select>
+                        
+                        <label for="pickup-address">Pickup Address</label>
+                        <textarea id="pickup-address" name="pickup-address" rows="3"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="food-items">Food Items (Please list)</label>
+                        <textarea id="food-items" name="food-items" rows="4" required placeholder="Example: 5 cans of vegetables, 2 bags of rice, 10 lbs of apples..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="expiration">Expiration Dates (if applicable)</label>
+                        <textarea id="expiration" name="expiration" rows="2" placeholder="Please note any expiration dates for perishable items"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="checkbox" id="newsletter" name="newsletter" checked>
+                        <label for="newsletter">Subscribe to our newsletter</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="checkbox" id="agree" name="agree" required>
+                        <label for="agree">I confirm that all donated food is safe, unopened, and properly stored</label>
+                    </div>
+                    
+                    <button type="submit" class="btn submit-btn">Submit Donation</button>
+                </form>
+            </div>
+            
+            <div class="donation-info">
+                <h3>Most Needed Food Items</h3>
+                <div class="impact-item">
+                    <div class="impact-icon">
+                        <i class="fas fa-cookie"></i>
+                    </div>
+                    <div class="impact-content">
+                        <h4>Canned Proteins</h4>
+                        <p>Tuna, chicken, beans, and peanut butter provide essential protein.</p>
+                    </div>
+                </div>
+                
+                <div class="impact-item">
+                    <div class="impact-icon">
+                        <i class="fas fa-apple-alt"></i>
+                    </div>
+                    <div class="impact-content">
+                        <h4>Whole Grains</h4>
+                        <p>Brown rice, whole wheat pasta, and oatmeal are always needed.</p>
+                    </div>
+                </div>
+                
+                <div class="impact-item">
+                    <div class="impact-icon">
+                        <i class="fas fa-carrot"></i>
+                    </div>
+                    <div class="impact-content">
+                        <h4>Canned Vegetables</h4>
+                        <p>Low-sodium vegetables help provide balanced nutrition.</p>
+                    </div>
+                </div>
+                
+                <div class="impact-item">
+                    <div class="impact-icon">
+                        <i class="fas fa-wine-bottle"></i>
+                    </div>
+                    <div class="impact-content">
+                        <h4>Cooking Essentials</h4>
+                        <p>Cooking oil, flour, sugar, and spices help families prepare meals.</p>
+                    </div>
+                </div>
+                
+                <div class="food-guidelines">
+                    <h4>Food Donation Guidelines</h4>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Non-perishable items only (unless coordinated)</li>
+                        <li><i class="fas fa-check"></i> Unopened and in original packaging</li>
+                        <li><i class="fas fa-check"></i> Not expired or damaged</li>
+                        <li><i class="fas fa-check"></i> No homemade items (except through approved programs)</li>
+                        <li><i class="fas fa-check"></i> Glass containers accepted if properly packaged</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Impact -->
+    <section class="donation-impact">
+        <div class="container">
+            <h2>Your Food Donation Makes an Impact</h2>
+            <p class="section-subtitle">See how your contribution fights hunger</p>
+            
+            <div class="impact-grid">
+                <div class="impact-card">
+                    <img src="images/food-assistant.jpg" alt="Food Impact 1">
+                    <div class="impact-content">
+                        <h3>Emergency Food Boxes</h3>
+                        <p>Your donations help us provide emergency food boxes to families in crisis.</p>
+                    </div>
+                </div>
+                
+                <div class="impact-card">
+                    <img src="images/school-mool.jpg" alt="Food Impact 2">
+                    <div class="impact-content">
+                        <h3>School Meal Programs</h3>
+                        <p>We provide weekend meal kits to 1,200 school children each week.</p>
+                    </div>
+                </div>
+                
+                <div class="impact-card">
+                    <img src="images/Senior-Nutrition.jpg" alt="Food Impact 3">
+                    <div class="impact-content">
+                        <h3>Senior Nutrition</h3>
+                        <p>Over 500 seniors receive monthly nutrition assistance through our programs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <p class="section-subtitle">Find answers to common questions about food donations</p>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What types of food do you accept?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We accept most non-perishable food items that are unopened and within their expiration date. This includes canned goods, dry goods, pasta, rice, cereal, and more. We also accept fresh produce when coordinated in advance. We cannot accept homemade items, opened packages, or expired food for safety reasons.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Do you accept perishable food?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We can accept perishable food like fresh produce, dairy, and frozen items with advance notice and proper coordination. Please call our food bank at (123) 456-7892 to arrange perishable food donations. We cannot accept perishable items without prior arrangement.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Can I organize a food drive?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We welcome food drives from schools, businesses, churches, and community groups. We can provide collection bins, posters, and guidance on most-needed items. Contact our food drive coordinator at fooddrives@helpinghands.org or call (123) 456-7893 to get started.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Do you take expired food?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>For safety reasons, we cannot accept any food that is past its expiration date. The only exception is if the item has a "best by" date (rather than "use by" or "expires on") and is still within 6 months of that date for non-perishable items.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Where can I drop off food donations?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We have several drop-off locations throughout the city. Our main food bank is open for donations Monday-Friday from 9am-4pm at 123 Charity St. We also have donation bins at all local Grocery Plus stores. For large donations, we recommend calling ahead to ensure we can accommodate your donation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Helping Hands</h3>
+                <p>We are a non-profit organization dedicated to helping those in need through donations and community support.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                <a href="signup.html">Sign Up</a>
+            </div>
+            <div class="footer-section">
+                <h3>Donate</h3>
+                <a href="donate-money.html">Money</a>
+                <a href="donate-clothes.html">Clothes</a>
+                <a href="donate-food.html">Food</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Charity St, Help City</p>
+                <p><i class="fas fa-phone"></i> +91 9721884701</p>
+                <p><i class="fas fa-envelope"></i> adityajaiswalsbi20@gmail.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; Parvarin Sanskar Foundation. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Donation Confirmation Modal -->
+    <div class="modal" id="donationModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Thank You for Your Food Donation!</h2>
+            <p id="donationMessage">Your generous contribution will help feed families in need.</p>
+            <p>We'll contact you shortly to confirm the details of your donation.</p>
+            <button class="btn modal-btn" id="modalCloseBtn">Close</button>
+        </div>
+    </div>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-app.js";
+        import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore.js";
+      
+        const firebaseConfig = {
+    apiKey: "AIzaSyCZ4ZBOmHEdH3Mzw2xJqKGFOZiBaiRsBgk",
+    authDomain: "donation-e3a5a.firebaseapp.com",
+    projectId: "donation-e3a5a",
+    storageBucket: "donation-e3a5a.firebasestorage.app",
+    messagingSenderId: "125372713766",
+    appId: "1:125372713766:web:bd2c253b8062051ecf8fe7",
+    measurementId: "G-2YTLJ4ZYGH"
+  };
+      
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+      
+        window.firebaseApp = app;
+        window.firebaseDb = db;
+        window.firebaseAddDoc = addDoc;
+        window.firebaseCollection = collection;
+      </script>
+      
+
+    <script src="js/common.js"></script>
+    <script src="js/donate-food.js"></script>
+</body>
+</html>

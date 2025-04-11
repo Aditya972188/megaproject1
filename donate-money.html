@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Money -Parvarin Sanskar Foundation</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/donate-money.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="images/logo.jpg" alt="Parvarin Sanskar Foundation">
+            Parvarin Sanskar Foundation
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li class="dropdown">
+                <a href="#">Donate <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="donate-money.html" class="active">Money</a>
+                    <a href="donate-clothes.html">Clothes</a>
+                    <a href="donate-food.html">Food</a>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="signup.html" class="btn btn-outline">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <!-- Donation Hero Section -->
+    <section class="donation-hero">
+        <div class="donation-hero-content">
+            <h1>Financial Donations</h1>
+            <p>Your monetary contribution helps us provide immediate assistance to those in need.</p>
+        </div>
+    </section>
+
+    <!-- Donation Options -->
+    <section class="donation-options">
+        <div class="container">
+            <h2>Choose Your Donation Method</h2>
+            <p class="section-subtitle">Every dollar makes a difference</p>
+            
+            <div class="options-grid">
+                <div class="option-card">
+                    <div class="option-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3>One-Time Donation</h3>
+                    <p>Make a single donation to support our immediate relief efforts.</p>
+                    <button class="btn option-btn" data-option="one-time">Donate Now</button>
+                </div>
+                
+                <div class="option-card">
+                    <div class="option-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>Monthly Donation</h3>
+                    <p>Become a sustaining donor with automatic monthly contributions.</p>
+                    <button class="btn option-btn" data-option="monthly">Donate Monthly</button>
+                </div>
+                
+                <div class="option-card">
+                    <div class="option-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Corporate Matching</h3>
+                    <p>Double your impact through your employer's matching gift program.</p>
+                    <button class="btn option-btn" data-option="corporate">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Form Section -->
+    <section class="donation-form-section" id="donation-form">
+        <div class="container">
+            <div class="form-container">
+                <h2>Make Your Donation</h2>
+                <form id="donationForm">
+                    <div class="form-group">
+                        <label for="amount">Donation Amount</label>
+                        <div class="amount-options">
+                            <button type="button" class="amount-option" data-amount="25">$25</button>
+                            <button type="button" class="amount-option" data-amount="50">$50</button>
+                            <button type="button" class="amount-option" data-amount="100">$100</button>
+                            <button type="button" class="amount-option" data-amount="250">$250</button>
+                            <button type="button" class="amount-option" data-amount="500">$500</button>
+                            <button type="button" class="amount-option" data-amount="other">Other</button>
+                        </div>
+                        <input type="number" id="amount" name="amount" placeholder="Enter custom amount" min="1" style="display: none;">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="frequency">Donation Frequency</label>
+                        <select id="frequency" name="frequency" required>
+                            <option value="one-time">One-time donation</option>
+                            <option value="monthly">Monthly donation</option>
+                            <option value="quarterly">Quarterly donation</option>
+                            <option value="yearly">Yearly donation</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="purpose">Purpose of Donation (Optional)</label>
+                        <select id="purpose" name="purpose">
+                            <option value="">Where it's needed most</option>
+                            <option value="food">Food Assistance</option>
+                            <option value="shelter">Shelter Support</option>
+                            <option value="education">Education Programs</option>
+                            <option value="medical">Medical Aid</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Payment Method</label>
+                        <div class="payment-methods">
+                            <div class="payment-method">
+                                <input type="radio" id="credit-card" name="payment" value="credit-card" checked>
+                                <label for="credit-card">
+                                    <i class="fab fa-cc-visa"></i>
+                                    <i class="fab fa-cc-mastercard"></i>
+                                    <i class="fab fa-cc-amex"></i>
+                                    Credit/Debit Card
+                                </label>
+                            </div>
+                            <div class="payment-method">
+                                <input type="radio" id="paypal" name="payment" value="paypal">
+                                <label for="paypal">
+                                    <i class="fab fa-cc-paypal"></i>
+                                    PayPal
+                                </label>
+                            </div>
+                            <div class="payment-method">
+                                <input type="radio" id="bank-transfer" name="payment" value="bank-transfer">
+                                <label for="bank-transfer">
+                                    <i class="fas fa-university"></i>
+                                    Bank Transfer
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="credit-card-form" id="creditCardForm">
+                        <div class="form-group">
+                            <label for="card-number">Card Number</label>
+                            <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456">
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="expiry-date">Expiry Date</label>
+                                <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" name="cvv" placeholder="123">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="card-name">Name on Card</label>
+                            <input type="text" id="card-name" name="card-name" placeholder="John Doe">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="checkbox" id="newsletter" name="newsletter" checked>
+                        <label for="newsletter">Subscribe to our newsletter</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="checkbox" id="anonymous" name="anonymous">
+                        <label for="anonymous">Donate anonymously</label>
+                    </div>
+                    
+                    <button type="submit" class="btn submit-btn">Complete Donation</button>
+                </form>
+            </div>
+            
+            <div class="donation-info">
+                <h3>How Your Donation Helps</h3>
+                <div class="impact-item">
+                    <div class="impact-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <div class="impact-content">
+                        <h4>Provide Meals</h4>
+                        <p>$25 can provide 10 nutritious meals to families in need.</p>
+                    </div>
+                </div>
+                
+                <div class="impact-item">
+                    <div class="impact-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="impact-content">
+                        <h4>Shelter Support</h4>
+                        <p>$100 can provide a night's shelter for a homeless individual.</p>
+                    </div>
+                </div>
+                
+                <div class="impact-item">
+                    <div class="impact-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="impact-content">
+                        <h4>Education</h4>
+                        <p>$50 can provide school supplies for a child for a year.</p>
+                    </div>
+                </div>
+                
+                <div class="impact-item">
+                    <div class="impact-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <div class="impact-content">
+                        <h4>Medical Care</h4>
+                        <p>$75 can provide basic medical care for someone without insurance.</p>
+                    </div>
+                </div>
+                
+                <div class="security-badge">
+                    <i class="fas fa-lock"></i>
+                    <p>Secure 256-bit SSL encryption. Your donation is safe and secure.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Impact -->
+    <section class="donation-impact">
+        <div class="container">
+            <h2>Your Donation Makes an Impact</h2>
+            <p class="section-subtitle">See how your contribution changes lives</p>
+            
+            <div class="impact-grid">
+                <div class="impact-card">
+                    <img src="images/food-assistant.jpg" alt="Impact 1">
+                    <div class="impact-content">
+                        <h3>Food Assistance</h3>
+                        <p>Your donations help us distribute food to over 5,000 families each month.</p>
+                    </div>
+                </div>
+                
+                <div class="impact-card">
+                    <img src="images/food-donation.jpg" alt="Impact 2">
+                    <div class="impact-content">
+                        <h3>Shelter Support</h3>
+                        <p>We've provided emergency shelter to 1,200 individuals this year alone.</p>
+                    </div>
+                </div>
+                
+                <div class="impact-card">
+                    <img src="images/school-mool.jpg" alt="Impact 3">
+                    <div class="impact-content">
+                        <h3>Education Programs</h3>
+                        <p>Over 500 children received educational support through our programs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+   
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <p class="section-subtitle">Find answers to common questions about donating</p>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Is my donation tax-deductible?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes,Parvarin Sanskar Foundationis a registered 501(c)(3) nonprofit organization. All donations are tax-deductible to the extent allowed by law. You will receive a receipt for your donation via email that you can use for tax purposes.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How can I update my recurring donation?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>You can update or cancel your recurring donation at any time by contacting our donor support team at donations@helpinghands.org or by calling (123) 456-7890. Please have your donor ID or email address ready when you contact us.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What percentage of my donation goes to programs?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>87% of every dollar donated goes directly to our programs and services. 10% supports our administrative costs, and 3% goes to fundraising efforts. We strive to keep our overhead costs low to maximize the impact of your donation.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Can I donate stocks or other assets?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we accept donations of stocks, bonds, and other appreciated assets. These types of donations often provide tax advantages. Please contact our development office at (123) 456-7891 for instructions on how to make a stock transfer.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How will I know my donation was received?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>You will receive an email confirmation immediately after your donation is processed. If you don't see it in your inbox, please check your spam folder. For recurring donations, you'll receive a receipt each month when your donation is processed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Parvarin Sanskar Foundation</h3>
+                <p>We are a non-profit organization dedicated to helping those in need through donations and community support.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                <a href="signup.html">Sign Up</a>
+            </div>
+            <div class="footer-section">
+                <h3>Donate</h3>
+                <a href="donate-money.html">Money</a>
+                <a href="donate-clothes.html">Clothes</a>
+                <a href="donate-food.html">Food</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Charity St, Help City</p>
+                <p><i class="fas fa-phone"></i> +91 9721884701</p>
+                <p><i class="fas fa-envelope"></i> adityajaiswalsbi20@gmail.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Parvarin Sanskar Foundation. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Donation Confirmation Modal -->
+    <div class="modal" id="donationModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Thank You for Your Donation!</h2>
+            <p id="donationMessage">Your generous contribution of $<span id="donationAmount">0</span> will help us continue our important work.</p>
+            <p>You'll receive a confirmation email shortly with your donation receipt.</p>
+            <button class="btn modal-btn" id="modalCloseBtn">Close</button>
+        </div>
+    </div>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-app.js";
+        import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore.js";
+      
+        const firebaseConfig = {
+    apiKey: "AIzaSyCZ4ZBOmHEdH3Mzw2xJqKGFOZiBaiRsBgk",
+    authDomain: "donation-e3a5a.firebaseapp.com",
+    projectId: "donation-e3a5a",
+    storageBucket: "donation-e3a5a.firebasestorage.app",
+    messagingSenderId: "125372713766",
+    appId: "1:125372713766:web:bd2c253b8062051ecf8fe7",
+    measurementId: "G-2YTLJ4ZYGH"
+  };
+      
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+      
+        window.firebaseApp = app;
+        window.firebaseDb = db;
+        window.firebaseAddDoc = addDoc;
+        window.firebaseCollection = collection;
+      </script>
+
+    <script src="js/common.js"></script>
+    <script src="js/donate-money.js"></script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us | Parvarin Sanskar Foundation</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/signup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar (same as your existing navbar) -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="images/logo.jpg" alt="Parvarin Sanskar Foundation">
+            Parvarin Sanskar Foundation
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li class="dropdown">
+                <a href="#">Donate <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="donate-money.html">Money</a>
+                    <a href="donate-clothes.html">Clothes</a>
+                    <a href="donate-food.html">Food</a>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="signup.html" class="btn btn-signup">Join Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="join-container">
+        <div class="form-container">
+            <!-- Tab Navigation -->
+            <div class="tab-nav">
+                <button class="tab-btn active" data-tab="signup">Sign Up</button>
+                <button class="tab-btn" data-tab="volunteer">Volunteer</button>
+            </div>
+
+            <!-- Sign Up Form -->
+            <div id="signup" class="tab-content active">
+                <h2>Create Your Account</h2>
+                <form id="signupForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="user-type">I want to:</label>
+                        <select id="user-type" name="user-type">
+                            <option value="donor">Donate items/funds</option>
+                            <option value="receiver">Receive assistance</option>
+                            <option value="both">Both</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                </form>
+            </div>
+
+            <!-- Volunteer Form -->
+            <div id="volunteer" class="tab-content">
+                <h2>Volunteer Application</h2>
+                <form id="volunteerForm">
+                    <div class="form-group">
+                        <label for="vol-name">Full Name</label>
+                        <input type="text" id="vol-name" name="vol-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="vol-email">Email</label>
+                        <input type="email" id="vol-email" name="vol-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="vol-phone">Phone Number</label>
+                        <input type="tel" id="vol-phone" name="vol-phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="vol-skills">Skills/Interests</label>
+                        <select id="vol-skills" name="vol-skills" multiple>
+                            <option value="teaching">Teaching</option>
+                            <option value="construction">Construction</option>
+                            <option value="cooking">Cooking</option>
+                            <option value="driving">Driving</option>
+                            <option value="medical">Medical</option>
+                            <option value="tech">Technology</option>
+                        </select>
+                        <small>Hold Ctrl/Cmd to select multiple</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="vol-availability">Availability</label>
+                        <div class="availability-options">
+                            <label><input type="checkbox" name="weekdays"> Weekdays</label>
+                            <label><input type="checkbox" name="weekends"> Weekends</label>
+                            <label><input type="checkbox" name="mornings"> Mornings</label>
+                            <label><input type="checkbox" name="evenings"> Evenings</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-accent">Apply to Volunteer</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="benefits-container">
+            <div class="benefits-card">
+                <h3>Why Sign Up?</h3>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Track your donations</li>
+                    <li><i class="fas fa-check-circle"></i> Receive updates on our work</li>
+                    <li><i class="fas fa-check-circle"></i> Access exclusive content</li>
+                    <li><i class="fas fa-check-circle"></i> Manage your preferences</li>
+                </ul>
+            </div>
+            <div class="benefits-card">
+                <h3>Why Volunteer?</h3>
+                <ul>
+                    <li><i class="fas fa-heart"></i> Make a direct impact</li>
+                    <li><i class="fas fa-heart"></i> Gain valuable experience</li>
+                    <li><i class="fas fa-heart"></i> Meet like-minded people</li>
+                    <li><i class="fas fa-heart"></i> Flexible opportunities</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+  <section class="newsletter">
+        <div class="newsletter-content">
+            <h2>Stay Connected</h2>
+            <p>Subscribe to our newsletter to receive updates on our work and learn how you can help.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Helping Hands</h3>
+                <p>We are a non-profit organization dedicated to helping those in need through donations and community support.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                <a href="signup.html">Sign Up</a>
+            </div>
+            <div class="footer-section">
+                <h3>Donate</h3>
+                <a href="donate-money.html">Money</a>
+                <a href="donate-clothes.html">Clothes</a>
+                <a href="donate-food.html">Food</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Charity St, Help City</p>
+                <p><i class="fas fa-phone"></i> +91 9721884701</p>
+                <p><i class="fas fa-envelope"></i> adityajaiswalsbi20@gmail.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Parvarin Sanskar Foundation. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/common.js"></script>
+    <script src="js/signup.js"></script>
+</body>
+</html>
